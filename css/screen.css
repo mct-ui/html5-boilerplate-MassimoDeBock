@@ -72,6 +72,18 @@ h1 {
   line-height: 2rem;
   margin-bottom: 1.5rem;
 }
+@media (max-width: 36.0625em) {
+  h1 {
+    font-size: 2.8865075782rem;
+    line-height: 3rem;
+  }
+}
+@media (max-width: 48.0625em) {
+  h1 {
+    font-size: 3.6532361537rem;
+    line-height: 4rem;
+  }
+}
 
 h2 {
   font-weight: 700;
@@ -164,11 +176,27 @@ a:active {
     ---
     Creates a horizontal row with padding
 */
+.o-row {
+  padding: 1.5rem 1.5rem 0;
+}
+.o-row--primary {
+  background-color: hsl(198.0786026201, 100%, 40%);
+}
+.o-row--dark {
+  background-color: hsl(198.0786026201, 10%, 10%);
+  color: white;
+}
+
 /*
     Objects: Container
     ---
     Creates a horizontal container that sets de global max-width
 */
+.o-container {
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
 /*
     Objects: Layout
     ---
